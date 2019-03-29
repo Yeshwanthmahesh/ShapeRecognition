@@ -7,7 +7,7 @@ cv2.imshow('Original', img)
 filter = cv2.GaussianBlur(img,(5,5),0)
 ret, otsu = cv2.threshold(img,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 
-#Displaying the Filtered Image
+#Displaying the Original and Thresholded Image
 cv2.imshow('Original', img)
 cv2.waitKey(0)
 cv2.imshow('Threshold', otsu)
